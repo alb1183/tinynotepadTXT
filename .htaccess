@@ -1,0 +1,5 @@
+RewriteEngine on
+
+
+AddDefaultCharset UTF-8
+ErrorDocument 404 /tinynotepad/404.php

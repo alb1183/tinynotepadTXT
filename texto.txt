@@ -1,0 +1,44 @@
+Hola a todos
+esto es un texto de prueba
+
+
+En Bios UEFI únicamente podemos instalar los sistemas de 64 bits. Los de 32 nunca se instalarán en modo UEFI.
+ 
+1) Verificar en la Bios que efectivamente la Bios está en modo UEFI.
+Algunas Bios tienen modo BIOS normal y modo UEFI. Debe estar en este ultimo modo.
+ 
+2) Es imprescindible que la BIOS arranque el CDROM en este modo. Para ello, debemos tener el DVD de instalación metido. Apagar físicamente la maquina con él introducido y a continuación darle corriente. En general NO VALE meter el DVD mientras está encendida la maquina ya que no lo tomará. Si no lo toma en modo UEFI la instalación no será UEFI.
+ 
+3) No se puede instalar por tanto desde un pen booteable en modo UEFI.
+ 
+4) Para asegurarnos que está en modo UEFI, cuando se inicie la instalación de Windows en la misma pantalla de bienvenida de la instalación, pulsamos MAY+F10. Esto nos sacará una consola, desde ella ejecutamos:
+
+notepad  Windows\Panther\setupact.log
+
+Veremos una de estas dos cosas:
+
+Callback_BootEnvironmentDetect: Detected boot environment: BIOS
+
+o bien:
+
+Callback_BootEnvironmentDetect: Detected boot environment: UEFI
+
+Solo estaremos en la instalación correcta en modo EFI en este ultimo caso. Si no está en dicho modo, o la Bios está mal configurada, no no hemos arrancado el CDROM en modo UEFI o encendido la maquina con el DVD ya introducido. No vale que continuemos ya que no se instalará en UEFI.
+ 
+5) Las Bios UEFI necesitan que el disco de instalación sea GPT (no MBR) y además necesita instalar la partición UEFI de boot. Para ello, el disco debe estar vacío.
+ 
+6) Para que el disco lo esté incluso sin el MBR, cuando lleguemos a la pantalla de instalación en donde se ve el disco a instalar, ejecutamos de nuevo MAY+F10 para obtener la consola. En ella:
+ 
+DISKPART
+select disk 0
+clean
+exit
+ 
+7) A continuación damos al botón de refrescar en la pantalla en donde vemos el disco, y SIN seleccionar nada, es decir sin seleccionar el disco, le damos a continuar.
+ 
+Esto creará la partición UEFI y en el resto instalará el sistema operativo.
+Posteriormente si queremos gestionar mas particiones en el Disco, ya desde el sistema operativo y en el Administrador de Disco podremos reducir el tamaño de dicha partición y crear nuevas particiones a nuestro gusto.
+
+https://social.technet.microsoft.com/Forums/es-ES/7434648a-14bf-4649-8778-c4b478c9ec43/instrucciones-para-instalar-windows-en-bios-uefi?forum=w8generales
+
+************

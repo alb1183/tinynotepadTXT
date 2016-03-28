@@ -1,0 +1,145 @@
+body {
+    background: url("../img/noise.png");
+    background-color: #E9EAED;
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    direction: ltr;
+}
+h1 {
+    font-size: 32px;
+    font-weight: bolder;
+}
+a img {
+    border:none;
+}
+#cuerpo {
+    background: url("../img/noise2.png");
+    border-radius: 4px 4px 0px 0px;
+    border-left: 1px solid #D3D6DB;
+    border-right: 1px solid #D3D6DB;
+    border-top: 1px solid #D3D6DB;
+    background-color: #DCE8ED;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1000px;
+    padding: 10px;
+    position: relative;
+    z-index: 3;
+    margin-top: 25px;
+    box-shadow: 5px 15px 5px -5px rgba(0, 0, 0, 0.3), -5px 15px 5px -5px rgba(0, 0, 0, 0.3);
+}
+#footer {
+    border-radius: 0 0 4px 4px;
+    border-left: 1px solid #D3D6DB;
+    background-color: #E8EEF4;
+    border-right: 1px solid #D3D6DB;
+    border-bottom: 1px solid #D3D6DB;
+    border-top: 1px solid #D3D6DB;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1000px;
+    padding: 10px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0.3), -5px 5px 5px -5px rgba(0, 0, 0, 0.3);
+}
+#footer-datos {
+    clear: left;
+    color: #AAAAAA;
+    text-align: center;
+    width: 100%;
+    font-family: 'Lucida Grande',Tahoma,Arial,Verdana,Sans-Serif;
+    font-size: 11px;
+    line-height: 1.3em;
+}
+#footer-datos a {
+    color: #37404E;
+    text-decoration: none;
+    cursor: pointer;
+}
+#footer-datos a:hover {
+    text-decoration: underline;
+}
+a:visited  {
+    color: #1122CC;
+    text-decoration: none;
+}
+a:link {
+    color: #1122CC;
+    text-decoration: none;
+}
+a:active {
+    color: #1122CC;
+}
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+#sidebar {
+    float: right;
+    width: 260px;
+}
+#main-col {
+    float: left;
+    overflow: hidden;
+    width: 730px;
+}
+hr {
+ border: 0;
+ height: 1px;
+ background: #555;
+ background-image: -webkit-linear-gradient(left, #DCE8ED, #555, #DCE8ED);
+ background-image: -moz-linear-gradient(left, #DCE8ED, #555, #DCE8ED);
+ background-image: -ms-linear-gradient(left, #DCE8ED, #555, #DCE8ED);
+ background-image: -o-linear-gradient(left, #DCE8ED, #555, #DCE8ED); 
+ background-image: linear-gradient(to right, #DCE8ED, #555, #DCE8ED); 
+}
+.textareastyle2 {
+    background-color: #CCDFE8;
+    background-image: url("../img/noise3.png");
+    border-radius: 0px 0px 0px 0px;
+    border: none;
+    width: 1010px;
+    height: 400px;
+    min-height: 200px;
+    max-height: 1500px;
+    padding: 5px 0 0 10px;
+    resize: vertical;
+    margin-bottom: -11px;
+    margin-left: -10px;
+    font-family: Helvetica;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+.inputtextstyle1 {
+    background-color: #CCDFE8;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+}
+.inputtextstyle1:focus {
+    border-color: #56B4EF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 12px rgba(82, 168, 236, 0.6);
+}
+.inputtextstyle1:hover {
+    border: 1px solid #999999;
+    outline: medium none;
+}
+.inputtextstyle1 select{
+    cursor: pointer;
+}
+input, select {
+    background-color: #CCDFE8;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+}
+input:focus, select:focus {
+    border-color: #56B4EF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) inset, 0 0 12px rgba(82, 168, 236, 0.6);
+}
+input:hover, select:hover {
+    border: 1px solid #999999;
+    outline: medium none;
+}
+select{
+    cursor: pointer;
+}
